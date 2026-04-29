@@ -1,0 +1,33 @@
+import java.util.Scanner;
+class Project1{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("-----Welcome to The Futura Shop-----");
+        System.out.println();
+        System.out.print("Enter Product Name: ");
+        String productName = sc.nextLine();
+
+        System.out.print("Enter Unit Price  : $");
+        double unit_price = sc.nextDouble();
+
+        System.out.print("Enter Quantity    : ");
+        int quantity = sc.nextInt();
+        
+        final double discount_rate = 0.15;
+        double subtotal = unit_price*quantity;
+        double discount_amount = subtotal*discount_rate;
+        double final_price = subtotal-discount_amount;
+        int final_priceInt = (int) final_price;
+        
+        System.out.println();
+        System.out.println("---------------------------");
+        System.out.println("-------Final Receipt-------");
+        System.out.println("---------------------------");
+        System.out.println("Item               : " +productName);
+        System.out.println("Subtotal           : $" +subtotal);
+        System.out.println("Total(Rounded Down): "+ final_priceInt);
+        System.out.println();
+        System.out.println("       THANK YOU");
+    }
+}
