@@ -28,6 +28,6 @@ class Project1{
         System.out.println("Subtotal           : $" +subtotal);
         System.out.println("Total(Rounded Down): "+ final_priceInt);
         System.out.println();
-        System.out.println("       THANK YOU");
+        System.out.println("       THANK YOU YOU VERY MUCH");
     }
 }
